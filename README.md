@@ -28,7 +28,19 @@ The USB C connector operates in USB 2.0 legacy mode. A FTDI `FT230QX` chip provi
 
 Drivers for the FTDI chip can be found [here](https://ftdichip.com/drivers/).
 
-# Software
+# Flashing
 
-The [avrdude](https://github.com/avrdudes/avrdude) command line is the reccommended way to use this programmer.
+The windows executable version of [avrdude](https://github.com/avrdudes/avrdude) is included in this repo to flash a target.
+
+You will need to substitute your serial port and target information.
+
+An example flashing command is below:
+```sh
+# Configure the target fuses.
+# This is required to set the oscillator config
+.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 19200 -p ATMEGA8 -U lfuse:w:0xbe:m -U hfuse:w:0xd9:m
+
+# Flash the target with 'firmware.hex'
+.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 19200 -p ATMEGA8 -U flash:w:firmware.hex:i
+```
 
