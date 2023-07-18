@@ -33,6 +33,8 @@ Drivers for the FTDI chip can be found [here](https://ftdichip.com/drivers/).
 The firmware for this PCB is [ICSP-FW.hex](./firmware/ICSP-FW.hex).
 See the usage section for an example of programming a ICSP programmer from another programmer.
 
+Note: To Program a ICSP programmer, its target `VCC` must *not* be powered. Ensure that `JP1` is open, and no power is provided via the `VCC` pin or ICSP connector.
+
 # Usage
 
 The windows executable version of [avrdude](https://github.com/avrdudes/avrdude) is included in this repo to flash a target.
