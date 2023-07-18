@@ -3858,7 +3858,7 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp d3200588-106f-4e29-9481-2eb08bfdd9cd))
   (gr_arc (start 100 104) (mid 100.585786 102.585786) (end 102 102)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp d84e7ea8-c636-4390-8b6b-df9b23f72780))
-  (gr_text "ICSP-Programmer\nv1.0\nJul 23" (at 136 111.8) (layer "B.SilkS") (tstamp 9a972a83-9c61-4296-87b1-fafc10afb460)
+  (gr_text "ICSP-Programmer\nv1.1\nJul 23" (at 136 111.8) (layer "B.SilkS") (tstamp 9a972a83-9c61-4296-87b1-fafc10afb460)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
   (gr_text "VCC" (at 127.9 119.2) (layer "F.SilkS" knockout) (tstamp 1b3a51ba-32ab-4237-8447-d63cb736a492)
