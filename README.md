@@ -28,19 +28,26 @@ The USB C connector operates in USB 2.0 legacy mode. A FTDI `FT230QX` chip provi
 
 Drivers for the FTDI chip can be found [here](https://ftdichip.com/drivers/).
 
-# Flashing
+# Firmware
+
+The firmware for this PCB is [ICSP-FW.hex](./firmware/ICSP-FW.hex).
+See the usage section for an example of programming a ICSP programmer from another programmer.
+
+# Usage
 
 The windows executable version of [avrdude](https://github.com/avrdudes/avrdude) is included in this repo to flash a target.
 
 You will need to substitute your serial port and target information.
 
-An example flashing command is below:
+An example for flashing the ICSP firmware is below:
 ```sh
+# Verify the target is connected.
+.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 115200 -p ATMEGA8
+
 # Configure the target fuses.
 # This is required to set the oscillator config
 .\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 115200 -p ATMEGA8 -U lfuse:w:0xbe:m -U hfuse:w:0xd9:m
 
-# Flash the target with 'firmware.hex'
-.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 115200 -p ATMEGA8 -U flash:w:firmware.hex:i
+# Flash the target with 'ICSP-FW.hex'
+.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 115200 -p ATMEGA8 -U flash:w:ICSP-FW.hex:i
 ```
-
