@@ -882,7 +882,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4e918ea6-fb1b-4dcc-91da-8ed3ff280bf9)
   )
-  (hierarchical_label "RX" (shape output) (at 205.74 68.58 0) (fields_autoplaced)
+  (hierarchical_label "RX" (shape input) (at 205.74 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid ce14c5b1-8de9-4c64-bf5c-cdfe358fb3bf)
   )

@@ -38,9 +38,9 @@ An example flashing command is below:
 ```sh
 # Configure the target fuses.
 # This is required to set the oscillator config
-.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 19200 -p ATMEGA8 -U lfuse:w:0xbe:m -U hfuse:w:0xd9:m
+.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 115200 -p ATMEGA8 -U lfuse:w:0xbe:m -U hfuse:w:0xd9:m
 
 # Flash the target with 'firmware.hex'
-.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 19200 -p ATMEGA8 -U flash:w:firmware.hex:i
+.\avrdude.exe -C "avrdude.conf" -c avrisp -P COM3 -b 115200 -p ATMEGA8 -U flash:w:firmware.hex:i
 ```
 

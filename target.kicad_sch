@@ -655,31 +655,6 @@
     (uuid f1d376ab-d1fd-4f01-a054-29548d3e0a3a)
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 60.96 91.44 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0ceca794-0742-4a9d-a8cc-3bd9f149d125)
-    (property "Reference" "#PWR029" (at 54.61 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 57.7851 91.7568 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 60.96 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 60.96 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bacd4624-fc3c-4cad-a234-d00bdc409aa5))
-    (instances
-      (project "ICSP-Programmer-HW"
-        (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
-          (reference "#PWR029") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_name "GND_1") (lib_id "power:GND") (at 91.44 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c24382c-bb6f-40de-ac21-4aeabdc40fa2)
@@ -725,31 +700,6 @@
       (project "ICSP-Programmer-HW"
         (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
           (reference "#PWR037") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 60.96 69.85 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 572e0943-2ef9-4c51-8886-37892c70192f)
-    (property "Reference" "#PWR031" (at 64.77 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 57.7851 70.1668 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 60.96 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 60.96 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f55b92db-2cff-41f9-b5b1-4205b617fc80))
-    (instances
-      (project "ICSP-Programmer-HW"
-        (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
-          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -879,6 +829,31 @@
       (project "ICSP-Programmer-HW"
         (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
           (reference "U4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 60.96 69.85 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid af7f6eff-603c-4a78-94a0-52de60428521)
+    (property "Reference" "#PWR029" (at 54.61 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 57.7851 70.1668 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 60.96 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 60.96 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 83f46eea-fc22-4230-8776-8785786fa323))
+    (instances
+      (project "ICSP-Programmer-HW"
+        (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -1077,6 +1052,31 @@
       (project "ICSP-Programmer-HW"
         (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
           (reference "#PWR030") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 60.96 91.44 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f886e85c-745b-4768-a8d5-5e883e598b49)
+    (property "Reference" "#PWR031" (at 64.77 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 57.7851 91.7568 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 60.96 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 60.96 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 29a6e9bf-ba4a-4a2f-91a7-9a3ad72b4240))
+    (instances
+      (project "ICSP-Programmer-HW"
+        (path "/5952f252-dd2a-4213-9849-5d3ec960c0f2/503087ff-ef98-4ee3-b2a9-012004e0bc0f"
+          (reference "#PWR031") (unit 1)
         )
       )
     )

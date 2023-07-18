@@ -76,7 +76,7 @@
     (property "Sheetfile" "usb.kicad_sch" (at 50.8 64.0846 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "RX" output (at 76.2 44.45 0)
+    (pin "RX" input (at 76.2 44.45 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 10e92d2f-2331-4392-9be4-6b0cc430613d)
     )
